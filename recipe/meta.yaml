@@ -1,4 +1,4 @@
-{% set version = '1.5.5.3' %}
+{% set version = "1.5.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/limSolve_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/limSolve/limSolve_{{ version }}.tar.gz
-  sha256: 2f27c03411e0d771ad50d5412125bf4fa0ba461051610edc77e20d28488e86d2
+  sha256: b97ea9930383634c8112cdbc42f71c4e93fe0e7bfaa8f401921835cb44cb49a0
 
 build:
   merge_build_host: True  # [win]
-  number: 1002
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
