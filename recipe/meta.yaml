@@ -16,7 +16,6 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 0
-  skip: true  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -59,13 +58,8 @@ about:
     solve a linear system Ax=B for the unknown x. It includes banded and tridiagonal
     linear systems.  The package calls Fortran functions from ''LINPACK''.'
   license_family: GPL
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
