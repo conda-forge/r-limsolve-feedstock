@@ -3,6 +3,7 @@ About r-limsolve-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-limsolve-feedstock/blob/main/LICENSE.txt)
 
+
 About r-limsolve
 ----------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=limSolve
 Package license: GPL-2.0-or-later
 
 Summary: Functions that (1) find the minimum/maximum of a linear or quadratic function: min or max (f(x)), where f(x) = ||Ax-b||^2 or f(x) = sum(a_i*x_i) subject to equality constraints Ex=f and/or inequality constraints Gx>=h, (2) sample an underdetermined- or overdetermined system Ex=f subject to Gx>=h, and if applicable Ax~=b,       (3) solve a linear system Ax=B for the unknown x. It includes banded and tridiagonal linear systems.  The package calls Fortran functions from 'LINPACK'.
+
 About r-limsolve
 ----------------
 
