@@ -1,4 +1,4 @@
-{% set version = "1.5.6" %}
+{% set version = "1.5.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/limSolve_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/limSolve/limSolve_{{ version }}.tar.gz
-  sha256: b97ea9930383634c8112cdbc42f71c4e93fe0e7bfaa8f401921835cb44cb49a0
+  sha256: 047766ff01171c67763f50103c4cfa97c37300e01dd84b0b2410e979e39c58f1
 
 build:
-  merge_build_host: True  # [win]
-  number: 4
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,12 +50,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=limSolve
   license: GPL-2.0-or-later
-  summary: 'Functions that (1) find the minimum/maximum of a linear or quadratic function: min
-    or max (f(x)), where f(x) = ||Ax-b||^2 or f(x) = sum(a_i*x_i) subject to equality
-    constraints Ex=f and/or inequality constraints Gx>=h, (2) sample an underdetermined-
-    or overdetermined system Ex=f subject to Gx>=h, and if applicable Ax~=b,       (3)
-    solve a linear system Ax=B for the unknown x. It includes banded and tridiagonal
-    linear systems.  The package calls Fortran functions from ''LINPACK''.'
+  summary: 'Functions that (1) find the minimum/maximum of a linear or quadratic function: min or max (f(x)), where f(x) = ||Ax-b||^2 or f(x) = sum(a_i*x_i) subject to equality constraints Ex=f and/or inequality constraints Gx>=h, (2) sample an underdetermined- or overdetermined system Ex=f subject to Gx>=h, and if applicable
+    Ax~=b,       (3) solve a linear system Ax=B for the unknown x. It includes banded and tridiagonal linear systems.  The package calls Fortran functions from ''LINPACK''.'
   license_family: GPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
