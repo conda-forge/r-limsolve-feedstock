@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/limSolve_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/limSolve/limSolve_{{ version }}.tar.gz
-  sha256: 299450f8268c9834280a032039b071039cb780ebd87fc5a3d7923fa8e72af938
+  sha256: 28ec956a3c93e8611d4f57a2fde5b98d6c2d52e10556557772c1e40a8a42661a
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
